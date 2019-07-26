@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image classification using MobileNet and p5.js</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+</head>
+
+<body>
+
+  <h2>Image classification using MobileNet and p5.js</h2>
+  <h6><span id="modelStatus">Loading base model...</span> | <span id="videoStatus">Loading video...</span></h6>
+
+  <button id="leftButton">add left button</button>
+  <span id="amountOfLeftImages">0</span> left Images       
+
+  <button id="rightButton">add right button</button>
+  <span id="amountOfRightImages">0</span> right Images
+
+  <button id="topButton">add top button</button>
+  <span id="amountOfTopImages">0</span> top Images
+
+  <button id="downButton">add down button</button>
+  <span id="amountOfDownImages">0</span> down Images
+
+  <button id="trainButton">Train!</button><span id="loss"></span>
+
+  <button id="save">Save</button> 
+
+  <input type="file" id="load" multiple/>
+  <script src="sketch.js"></script>
+
+
+  <script src="sketch.js"></script>
+  <script src="snake.js"></script>
+
+ 
+</body>
+
+</html>
